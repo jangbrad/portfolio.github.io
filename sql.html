@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Case Study | Advanced SQL Skills Demonstration</title> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root{
+            --bg: #ffffff;
+            --muted: #677389;
+            --text-dark: #222;
+            --accent-soft: #fcf4f9;
+            --accent-strong: #a1648a;
+            --card-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            --radius:14px;
+        }
+
+        *{box-sizing:border-box}
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background: var(--bg);
+            color: var(--text-dark);
+            -webkit-font-smoothing:antialiased;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .case-study-header {
+            padding: 80px 20px 40px;
+            text-align: center;
+        }
+        .case-study-header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin: 0 0 15px;
+        }
+        .case-study-header .subtitle {
+            font-size: 1.2rem;
+            color: var(--muted);
+            max-width: 700px;
+            margin: 0 auto 25px;
+            line-height: 1.5;
+        }
+        .case-study-header .pill {
+            background: var(--accent-soft);
+            color: var(--accent-strong);
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .case-study-header .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: var(--accent-strong);
+            font-weight: 600;
+        }
+
+        .case-study-media {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-bottom: 50px;
+        }
+
+        .case-study-media img {
+            flex: 1 1 48%;
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .case-study-media img {
+                flex: 1 1 100%;
+            }
+        }
+
+        .detail-section {
+            padding: 20px 0 40px;
+        }
+        .detail-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-strong);
+            border-bottom: 2px solid var(--accent-soft);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        .detail-section h3 {
+            font-size: 1.4rem;
+            margin-top: 30px;
+            font-weight: 600;
+        }
+        .detail-section p, .detail-section li {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+        }
+        .detail-section ul, .detail-section ol {
+            padding-left: 20px;
+        }
+        .detail-section strong {
+            color: var(--accent-strong);
+        }
+
+        .key-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            padding: 20px;
+            background: var(--accent-soft);
+            border-radius: var(--radius);
+        }
+        .metric-item {
+            text-align: center;
+        }
+        .metric-item .value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-strong);
+            margin: 0;
+        }
+        .metric-item .label {
+            font-size: 1rem;
+            color: var(--muted);
+            margin: 0;
+        }
+        .btn {
+            background: var(--accent-strong);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            box-shadow: 0 4px 12px rgba(161, 100, 138, 0.2);
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #8b4e76;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <header class="case-study-header">
+        <a href="elements.html" class="back-link">
+            <span aria-hidden="true">⬅️</span> Back to Portfolio
+        </a>
+
+        <h1>Advanced SQL Skills Demonstration</h1>
+        <p class="subtitle">
+            Showcasing senior-level SQL techniques including window functions, CTEs, complex joins, pivoting and performance optimisation for large datasets.
+        </p>
+        <div>
+            <span class="pill">SQL</span>
+            <span class="pill">T-SQL</span>
+            <span class="pill">Window Functions</span>
+            <span class="pill">CTEs</span>
+            <span class="pill">Data Modeling</span>
+            <span class="pill">Query Optimisation</span>
+        </div>
+    </header>
+
+    <div class="case-study-media container">
+
+        <img src="images/sql 1.png" alt="Advanced SQL queries example with CTEs and window functions">
+        <img src="images/sql 2.png" alt="SQL query output showing aggregated metrics">
+    </div>
+
+    <div class="container">
+        <section class="detail-section">
+            <h2>Advanced SQL Concepts Demonstrated</h2>
+            <ul>
+                <li><strong>Common Table Expressions (CTEs):</strong> Simplified complex queries and allowed modular, readable code for multi-step transformations.</li>
+                <li><strong>Window Functions:</strong> Used <code>ROW_NUMBER()</code>, <code>RANK()</code>, <code>LEAD()/LAG()</code>, <code>SUM() OVER()</code> to calculate running totals, rankings and comparisons without extra joins.</li>
+                <li><strong>Complex Joins:</strong> Leveraged INNER, LEFT, RIGHT, FULL OUTER and CROSS joins for multi-table analysis across normalised datasets.</li>
+                <li><strong>Pivoting and Unpivoting:</strong> Transformed rows into columns and vice versa to produce aggregated views suitable for reporting dashboards.</li>
+                <li><strong>Nested Subqueries & Conditional Aggregations:</strong> Applied CASE statements and filtered aggregations for targeted metrics and KPIs.</li>
+                <li><strong>Query Optimisation:</strong> Indexed key columns, analysed execution plans and optimised query performance on millions of rows.</li>
+            </ul>
+        </section>
+
+
+    </div>
+</main>
+
+</body>
+</html>

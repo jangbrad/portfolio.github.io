@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Case Study | IKEA Sales & Customer Dashboard</title> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root{
+            --bg: #ffffff;
+            --muted: #677389;
+            --text-dark: #222;
+            --accent-soft: #fcf4f9;
+            --accent-strong: #a1648a;
+            --card-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            --radius:14px;
+        }
+
+        *{box-sizing:border-box}
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background: var(--bg);
+            color: var(--text-dark);
+            -webkit-font-smoothing:antialiased;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .case-study-header {
+            padding: 80px 20px 40px;
+            text-align: center;
+        }
+        .case-study-header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin: 0 0 15px;
+        }
+        .case-study-header .subtitle {
+            font-size: 1.2rem;
+            color: var(--muted);
+            max-width: 700px;
+            margin: 0 auto 25px;
+            line-height: 1.5;
+        }
+        .case-study-header .pill {
+            background: var(--accent-soft);
+            color: var(--accent-strong);
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .case-study-header .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: var(--accent-strong);
+            font-weight: 600;
+        }
+
+        .case-study-media {
+            text-align: center;
+            margin-bottom: 50px;
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .case-study-media img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .detail-section {
+            padding: 20px 0 40px;
+        }
+        .detail-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-strong);
+            border-bottom: 2px solid var(--accent-soft);
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .detail-section h3 {
+            font-size: 1.4rem;
+            margin-top: 30px;
+            font-weight: 600;
+        }
+        .detail-section p, .detail-section li {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+        }
+        .detail-section ul {
+            padding-left: 20px;
+        }
+        .detail-section strong {
+            color: var(--accent-strong);
+        }
+
+        .key-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            padding: 20px;
+            background: var(--accent-soft);
+            border-radius: var(--radius);
+        }
+        .metric-item {
+            text-align: center;
+        }
+        .metric-item .value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-strong);
+            margin: 0;
+        }
+        .metric-item .label {
+            font-size: 1rem;
+            color: var(--muted);
+            margin: 0;
+        }
+
+        .btn {
+            background: var(--accent-strong);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            box-shadow: 0 4px 12px rgba(161, 100, 138, 0.2);
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #8b4e76;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header class="case-study-header">
+            <a href="elements.html" class="back-link">
+                <span aria-hidden="true">⬅️</span> Back to Portfolio
+            </a>
+
+            <h1>Simulated IKEA 2023 Sales & Customer Dashboard</h1>
+            <p class="subtitle">
+                Simulated executive summary dashboard highlighting key financial and customer metrics for IKEA 2023. Focused on KPI trends, subcategory analysis and top customers for data-driven decision-making.
+            </p>
+            <div>
+                <span class="pill">Tableau</span>
+                <span class="pill">Data Visualisation</span>
+                <span class="pill">Sales Analysis</span>
+                <span class="pill">Customer Insights</span>
+                <span class="pill">Portfolio Case Study</span>
+            </div>
+        </header>
+
+       <div class="case-study-media container" style="display: flex; gap: 20px; flex-wrap: wrap;">
+    <img src="images/ikea1.png" alt="Full view of the Teacher Education Dashboard" style="flex: 1; max-width: 48%;">
+    <img src="images/ikea2.png" alt="Full view of the Project 2 Dashboard" style="flex: 1; max-width: 48%;">
+</div>
+
+        <div class="container">
+            <section class="detail-section">
+                <h2>1. Simulated Project Overview & Role</h2>
+                <p>
+                    <strong>Timeline:</strong> 2 days | <strong>Stakeholders:</strong> VP Sales, Customer Success Director | <strong>Role:</strong> Lead Data Analyst & Tableau Developer
+                </p>
+                <p>
+                    Designed a simulated Sales & Customer Dashboard to consolidate financial and customer metrics for IKEA 2023. The goal was to highlight trends in sales, profit, customer acquisition and orders, providing executives with actionable insights.
+                </p>
+            </section>
+
+            <section class="detail-section">
+                <h2>2. Problem Statement / Challenge</h2>
+                <p>
+                    IKEA's sales and customer metrics were previously analysed in isolated reports. There was no unified view to track revenue growth, customer behaviour or operational efficiency over time.
+                </p>
+                <ul>
+                    <li><strong>Fragmented Data Sources:</strong> Sales, customer and order data were scattered across multiple systems.</li>
+                    <li><strong>Lack of Trend Insights:</strong> Leadership could not easily track performance vs previous year or identify growth opportunities.</li>
+                    <li><strong>Limited Analytical Depth:</strong> Existing reporting lacked granular sub-category, customer and geographic analysis.</li>
+                </ul>
+            </section>
+
+          <section class="detail-section">
+    <h2>3. Methodology & Solution</h2>
+    <h3>Data & Tools</h3>
+    <p>
+        Used <strong>SQL</strong> to clean, transform and aggregate sales, profit, customer and order data before importing it into <strong>Tableau</strong>. 
+        In Tableau, the data was modeled and prepared to simulate an <strong>executive summary dashboard</strong> featuring key KPIs and trend analysis. 
+        Advanced Tableau techniques were applied, including <strong>LOD expressions</strong>, <strong>table calculations with window functions</strong>, 
+        <strong>data preparation and modeling</strong>, as well as <strong>advanced charting and dashboard design</strong> to enable interactive insights.
+    </p>
+    <h3>Key Analytical Steps</h3>
+    <ol>
+        <li><strong>Data Consolidation:</strong> Combined datasets for Total Sales, Profit, Customers, Orders and Product Categories using SQL to ensure accurate KPI calculation.</li>
+        <li><strong>KPI Development:</strong> Created Total Sales, Total Profit, Total Customers, Sales per Customer and Total Orders as executive-level KPIs with year-over-year comparison, leveraging Tableau calculated fields and LOD expressions.</li>
+        <li><strong>Trend & Subcategory Analysis:</strong> Built line charts for weekly sales, profit and customer trends and bar charts for sales and profit by product subcategory using advanced charting and formatting techniques.</li>
+        <li><strong>Customer Segmentation:</strong> Identified top customers by profit and order frequency using interactive table visualizations, distribution charts and dynamic filters.</li>
+        <li><strong>Advanced Tableau Features:</strong> Applied window functions, parameter-driven calculations, color-coded performance indicators and scenario analysis to enable multi-dimensional insights.</li>
+        <li><strong>Stakeholder Alignment:</strong> Designed dashboards and KPIs to simulate realistic executive reporting standards with analytical rigor expected in senior analyst roles.</li>
+    </ol>
+</section>
+<section class="detail-section">
+    <h2>4. Key Results & Impact</h2>
+    <div class="key-metrics" style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <div class="metric-item" style="flex: 1; min-width: 150px; text-align: center;">
+            <p class="value">$733K</p>
+            <p class="label">Total Sales (20.4% ↑ vs PY)</p>
+        </div>
+        <div class="metric-item" style="flex: 1; min-width: 150px; text-align: center;">
+            <p class="value">$93K</p>
+            <p class="label">Total Profit (14.2% ↑ vs PY)</p>
+        </div>
+        <div class="metric-item" style="flex: 1; min-width: 150px; text-align: center;">
+            <p class="value">693</p>
+            <p class="label">Total Customers (8.6% ↑ vs PY)</p>
+        </div>
+        <div class="metric-item" style="flex: 1; min-width: 150px; text-align: center;">
+            <p class="value">1,058</p>
+            <p class="label">Sales per Customer (10.8% ↑ vs PY)</p>
+        </div>
+        <div class="metric-item" style="flex: 1; min-width: 150px; text-align: center;">
+            <p class="value">1,687</p>
+            <p class="label">Total Orders (28.3% ↑ vs PY)</p>
+
+                    </div>
+                </div>
+                <ul>
+                    <li><strong>Revenue Growth:</strong> Highlighted double-digit increases in sales and profit, providing executives with immediate visibility into high-performing categories and months.</li>
+                    <li><strong>Customer Insights:</strong> Identified top customers by profit and order frequency, supporting targeted engagement and loyalty strategies.</li>
+                    <li><strong>Operational Awareness:</strong> Weekly trend analysis and subcategory comparisons allowed for early detection of inventory or performance bottlenecks.</li>
+                    <li><strong>Advanced Tableau Analytics:</strong> Demonstrated interactive dashboards, calculated fields, dynamic filters and visual encoding to translate raw data into actionable insights, showcasing senior-level analytical proficiency.</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+</body>
+</html>
